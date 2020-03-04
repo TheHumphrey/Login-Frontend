@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="containers">
+        <div class="borda">
+            <div class="teste">
+                <form class="form" onsubmit="cadastrar(event)">
+                    <label class="dados">Preencha os dados:</label>
+                    <label>Email *</label>
+                    <input type="email" name="Email" class="input" id="email" placeholder="Ex: exemplo@hot..."
+                        onclick="clearEmail()" />
+                    <label>Nome Completo</label>
+                    <input type="text" name="Nome" class="input" id="name" placeholder="Ex: Fernando..."
+                        onclick="clearName()" />
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="Date" class="input" id="date" placeholder="Ex: 1999-01-20"
+                        onclick="clearDate()" />
+                    <label>Senha *</label>
+                    <input type="password" name="Senha" class="input" id="senha" placeholder="Ex: 123@..."
+                        onclick="clearSenha()" />
+
+                    <input type="submit" name="login" class="button" value="Cadastrar-se">
+                </form>
+                <a class="login" href="../index.html">Fazer login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

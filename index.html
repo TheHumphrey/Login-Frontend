@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="containers">
+        <div class="borda">
+            <div class="teste">
+                <label>Email:</label>
+                <input type="email" name="Email" class="input" id="email" placeholder="Ex: exemplo@hot..."
+                    onclick="clearEmail()" />
+
+                <label>Senha:</label>
+                <input type="password" name="Senha" class="input" id="senha" placeholder="Ex: 123@..."
+                    onclick="clearSenha()" />
+                <input type="submit" name="login" class="button" value="Entrar" onclick="login()">
+                <a href="pages/cadastro.html">Cadastrar-se</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
